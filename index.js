@@ -1,5 +1,5 @@
 const historyState = require(`better-history-api`)
-const afterSuccessfulStateChange = require(`after-successful-state-change`)
+const afterSuccessfulStateChange = require(`./after-successful-state-change.js`)
 
 const currentAnchor = () => window.location.hash.replace(/^#/, ``)
 const scrollToElement = element => element && element.scrollIntoView()
