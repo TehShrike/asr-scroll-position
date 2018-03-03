@@ -4,7 +4,7 @@
   "description": "Manually update the browser's scroll position when using pushState routing with abstract-state-router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified >_<\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/TehShrike/asr-scroll-position/issues"
   },
-  "homepage": "https://github.com/TehShrike/asr-scroll-position#readme"
+  "homepage": "https://github.com/TehShrike/asr-scroll-position#readme",
+  "dependencies": {
+    "better-history-api": "^1.0.0"
+  }
 }
