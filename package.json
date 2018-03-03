@@ -1,6 +1,6 @@
 {
   "name": "asr-scroll-position",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manually update the browser's scroll position when using pushState routing with abstract-state-router",
   "main": "index.js",
   "scripts": {
