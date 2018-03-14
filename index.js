@@ -31,15 +31,17 @@ module.exports = function watchScrollPosition(stateRouter) {
 
 	historyState.on(`new state`, () => {
 		afterSuccessfulStateChange(stateRouter, () => {
-			const anchorElement = getElementById(currentAnchor())
+			window.requestAnimationFrame(() => {
+				const anchorElement = getElementById(currentAnchor())
 
-			if (anchorElement) {
-				scrollToElement(anchorElement)
-			} else if (atTop()) {
-				updatePosition()
-			} else {
-				scrollToTop()
-			}
+				if (anchorElement) {
+					scrollToElement(anchorElement)
+				} else if (atTop()) {
+					updatePosition()
+				} else {
+					scrollToTop()
+				}
+			})
 		})
 	})
 
